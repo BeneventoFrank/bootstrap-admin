@@ -1,4 +1,4 @@
-
+import DashboardLayout from "@/pages/Dashboard/Layout/DashboardLayout.vue";
 import HelloWorld from "@/pages/Dashboard/HelloWorld.vue";
 
 
@@ -10,11 +10,11 @@ const routes = [
   },
   {
     path: "/",
-    component: HelloWorld,
+    component: DashboardLayout,
     children: [
       {
         path: "helloworld",
-        name: "HelloWorld",
+        name: "Hello World",
         components: { default: HelloWorld }
       }
     ]
